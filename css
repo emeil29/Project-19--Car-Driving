@@ -1,0 +1,57 @@
+
+body{
+    background: linear-gradient( rgb(213, 213, 231) 35%, rgb(214, 223, 224) 100%);
+}
+.surface{
+    height: 190px;
+    width: 700%;
+    background-image: url(./image10.png);
+    display: block;
+    bottom: 0%; 
+    left: 0%;
+    position:absolute;
+    background-repeat: repeat-x;  
+} 
+.surface.active{
+    animation: move;  
+    animation-duration: 10s ;
+    animation-iteration-count: infinite;
+    
+}
+.car{
+    position: absolute;
+    bottom: 13%;
+    left: 5%; 
+}
+@keyframes move{
+
+    100%{
+        transform: translateX(-1950px);
+    }
+}
+.btn{
+    height: 10vh;
+    width: 10vw;
+    border-radius: 15px;
+    background-color: rgb(44, 147, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left:700px;
+    color: white;
+    font-size: 20px;
+}
+.btn2{
+    height: 10vh;
+    width: 10vw;
+    border-radius: 15px;
+    background-color: rgb(44, 147, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left:700px;
+    color: white;
+    font-size: 20px;
+}
